@@ -1,3 +1,5 @@
+import ReadMoreButton from "./ReadMoreButton";
+
 type Props = {
   article: Article;
 };
@@ -17,7 +19,7 @@ function Article({ article }: Props) {
         />
       )}
       <div className="flex-1 flex flex-col">
-        <div className="border flex-1 flex flex-col p-5">
+        <div className="flex-1 flex flex-col p-5">
           <h2 className="font-bold font-serif">{article.title}</h2>
           <section className="mt-2 flex-1">
             <p className="text-xs line-clamp-4">{article.description}</p>
@@ -30,6 +32,7 @@ function Article({ article }: Props) {
             <p>{article.published_at}</p>
           </footer>
         </div>
+        <ReadMoreButton article={article} />
       </div>
     </article>
   );
