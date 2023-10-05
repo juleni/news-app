@@ -7,7 +7,7 @@ export default async function Home() {
   // Fetch the news data
   //  const news: NewsResponse = await fetchNews(categories.join(","));
   const news: NewsResponse = response;
-  console.log(JSON.stringify(news));
+
   return (
     <div>
       <NewsList news={news} />
