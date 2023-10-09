@@ -20,7 +20,7 @@ function ReadMoreButton({ article }: Props) {
   return (
     <button
       onClick={handleClick}
-      className="bg-blue-200 dark:bg-blue-900 h-10 rounded-b-lg dark:text-gray-900"
+      className="bg-blue-200 dark:bg-blue-900 h-10 rounded-b-lg dark:text-gray-400"
     >
       Read More
     </button>
