@@ -1,6 +1,6 @@
 # Live News App
 
-## [Demo](https://news-juzqk4q3k-juleni.vercel.app/)
+## [Demo](https://news-37mnbedfi-juleni.vercel.app/)
 
 ##### Next.js 13.5 / React / Tailwind CSS / GraphQL
 
