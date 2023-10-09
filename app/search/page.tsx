@@ -1,4 +1,5 @@
-import fetchNews from "../../lib/fetchNews";
+import fetchNews from "@/lib/fetchNews";
+import response from "@/response.json";
 import NewsList from "../NewsList";
 
 type Props = {
@@ -6,11 +7,14 @@ type Props = {
 };
 
 async function SearchPage({ searchParams }: Props) {
-  const news: NewsResponse = await fetchNews(
+  // TODO: To apply fetch: rename "news2" variable to "news"
+  const news2: NewsResponse = await fetchNews(
     "general",
     searchParams?.term,
     true
   );
+  // Use mock data from "response.json" file
+  const news: NewsResponse = response;
   return (
     <div>
       <h1 className="headerTitle">Search results for: {searchParams?.term}</h1>
