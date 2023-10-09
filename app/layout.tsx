@@ -26,7 +26,7 @@ export default function RootLayout({
           }
         >
           <Header />
-          <div className="max-w-6xl">{children}</div>
+          <div className="max-w-7xl">{children}</div>
         </body>
       </Providers>
     </html>
