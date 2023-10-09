@@ -1,4 +1,5 @@
 import NewsList from "@/app/NewsList";
+import { categories } from "@/constants";
 import fetchNews from "@/lib/fetchNews";
 import response from "@/response.json";
 
@@ -20,3 +21,17 @@ async function NewsCategory({ params: { category } }: Props) {
 }
 
 export default NewsCategory;
+
+export async function generateStaticParams() {
+  // it prebuilds following pages :
+  // ./news/business
+  // ./news/entertainment
+  // ./news/general
+  // ./news/health
+  // ./news/science
+  // ./news/sports
+  // ./news/technology
+  return categories.map((category) => {
+    category: category;
+  });
+}
